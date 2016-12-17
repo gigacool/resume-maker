@@ -29,7 +29,7 @@
     "start": "npm run server:dev",
     "test": "run-s test:client test:server",
     "test:client": "cross-env NODE_ENV=test karma start --single-run",
-    "test:server": "ava server/spec.js --verbose",
+    "test:server": "ava server/**/*spec.js --verbose",
     "test:watch": "cross-env NODE_ENV=test karma start",
     "version": "npm run changelog && git add CHANGELOG.md"
   },
@@ -89,6 +89,7 @@
     "redux": "~3.6.0",
     "redux-saga": "~0.11.1",
     "reselect": "~2.5.4",
+    "sass-lint": "^1.10.2",
     "sass-loader": "~4.0.2",
     "sinon": "1.17.6",
     "style-loader": "~0.13.1",

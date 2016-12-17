@@ -74,7 +74,7 @@ config.plugins = [
 //-------------------------------------
 if (ENV_DEVELOPMENT || ENV_PRODUCTION) {
   config.entry = {
-    main: ['./src/main.js']
+    main: ['./sources/main.js']
   };
 
   config.output = {
@@ -88,7 +88,7 @@ if (ENV_DEVELOPMENT || ENV_PRODUCTION) {
       filename: 'index.html',
       hash: false,
       inject: 'body',
-      template: './src/index.html'
+      template: './sources/index.html'
     })
   );
 }
@@ -118,7 +118,7 @@ if (ENV_DEVELOPMENT) {
   );
 
   config.devServer = {
-    contentBase: './src',
+    contentBase: './sources',
     historyApiFallback: true,
     host: HOST,
     hot: true,
