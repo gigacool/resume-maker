@@ -1,11 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createSelector } from 'reselect';
+import AppHeader from '../components/app-header';
+// import { createSelector } from 'reselect';
 
 export function App({children}) {
   return (
     <div>
-      <h1>Yeah baby !</h1>
+      <AppHeader />
       {children}
     </div>
   );

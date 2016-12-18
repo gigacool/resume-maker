@@ -10,7 +10,7 @@ export class HomePage extends React.Component {
 
   render() {
     return (
-      <section>Home Page</section>
+      <section>Home Page or something</section>
     );
   }
 }
