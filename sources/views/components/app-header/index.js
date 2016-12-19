@@ -12,12 +12,15 @@ function AppHeader() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <a className="link link--github" rel="noreferrer noopener" target="_blank" href="https://github.com/gigacool/resume-maker" >About</a>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </header>
   );
 }
+// <li>
+//   <a className="link link--github" rel="noreferrer noopener" target="_blank" href="https://github.com/gigacool/resume-maker" >About</a>
+// </li>
 
 AppHeader.propTypes = {};
 
