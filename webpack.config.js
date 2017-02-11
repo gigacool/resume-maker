@@ -28,9 +28,9 @@ const PORT = 3000;
 //  LOADERS
 //---------------------------------------------------------
 const rules = {
-  js: {test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
+  js: {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel'},
   json: {test: /\.json$/, loader: 'json'},
-  scss: {test: /\.scss$/, loader: 'style!css!postcss!sass'}
+  scss: {test: /\.s?css$/, loader: 'style!css!postcss!sass'}
 };
 
 
@@ -40,7 +40,7 @@ const rules = {
 const config = module.exports = {};
 
 config.resolve = {
-  extensions: ['.js', '.json'],
+  extensions: ['.js', '.jsx', '.json'],
   modules: [
     path.resolve('.'),
     'node_modules'
@@ -74,7 +74,7 @@ config.plugins = [
 //-------------------------------------
 if (ENV_DEVELOPMENT || ENV_PRODUCTION) {
   config.entry = {
-    main: ['./sources/main.js']
+    main: ['./sources/main.jsx']
   };
 
   config.output = {

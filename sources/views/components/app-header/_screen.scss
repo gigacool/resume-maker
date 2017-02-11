@@ -22,7 +22,7 @@
       right: 50%;
       bottom: -2px;
       opacity: 0;
-      border-bottom: solid 2px #000;
+      border-bottom: solid 3px #ff5722;
     }
     &:after{
       transition: all $animationDuration;
@@ -32,7 +32,7 @@
       right: 50%;
       bottom: -2px;
       opacity: 0;
-      border-bottom: solid 2px #000;
+      border-bottom: solid 3px #ff5722;
     }
     &:hover {
       // border-bottom: solid 2px #444;
@@ -62,10 +62,10 @@
 
     text-shadow: 2px 2px 4px #bbb;
     a {
-      color: #fff;
+      color: #3f51b5;
     }
     b {
-      color: #464646;
+      color: #ff5722;
     }
   }
 

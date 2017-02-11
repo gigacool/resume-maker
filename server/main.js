@@ -13,7 +13,7 @@ require('./config/routes')(app, ENV_PRODUCTION);
 //=====================================
 //  LISTEN
 //-------------------------------------
-app.listen(app.get('port'), app.get('host'), error => {
+app.listen(app.get('port'), app.get('host'), (error) => {
   if (error) {
     logger.error(error);
   }

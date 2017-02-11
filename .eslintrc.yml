@@ -22,6 +22,7 @@ globals:
   sinon: true
 
 rules:
+  no-console: 1
   accessor-pairs: [2, {setWithoutGet: true}]
   array-bracket-spacing: 0
   array-callback-return: 0
@@ -98,7 +99,7 @@ rules:
   no-implicit-globals: 0
   no-implied-eval: 2
   no-inline-comments: 0
-  no-invalid-this: 2
+  no-invalid-this: 0
   no-iterator: 2
   no-label-var: 2
   no-labels: 2

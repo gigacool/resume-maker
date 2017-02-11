@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-export class HomePage extends React.Component {
+export class About extends React.Component {
   static propTypes = { };
 
   componentWillMount() {
@@ -10,7 +10,7 @@ export class HomePage extends React.Component {
 
   render() {
     return (
-      <section>Home Page or something</section>
+      <section>About</section>
     );
   }
 }
@@ -21,4 +21,4 @@ export class HomePage extends React.Component {
 
 const mapDispatchToProps = { };
 
-export default connect(null, mapDispatchToProps)(HomePage);
+export default connect(null, mapDispatchToProps)(About);

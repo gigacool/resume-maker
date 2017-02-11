@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-function AppHeader() {
+function Header() {
   return (
     <header className="header">
       <h1 className="header-title">
@@ -25,6 +25,6 @@ function AppHeader() {
 //   <a className="link link--github" rel="noreferrer noopener" target="_blank" href="https://github.com/gigacool/resume-maker" >About</a>
 // </li>
 
-AppHeader.propTypes = {};
+Header.propTypes = {};
 
-export default AppHeader;
+export default Header;
